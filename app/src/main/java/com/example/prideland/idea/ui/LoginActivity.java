@@ -14,7 +14,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
-
+    @BindView(R.id.registerTextView) TextView mRegisterTextView;
     @BindView(R.id.loginbutton) Button mLoginbutton;
     @BindView(R.id.logintext) TextView mLogintext;
 
@@ -30,6 +30,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         ButterKnife.bind(this);
 
         mLogintext.setOnClickListener(this);
+        mRegisterTextView.setOnClickListener(this);
 
 //        Typeface righteousFonts = Typeface.createFromAsset(getAssets(), "fonts/Righteous/Righteous-Regular.ttf");
 //        mLogintext.setTypeface(righteousFonts);
@@ -38,10 +39,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     @Override
-    public void onClick(View v) {
-        if(v == mLoginbutton){
+    public void onClick(View view) {
+        if (view == mRegisterTextView) {
             Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
             startActivity(intent);
+            finish();
         }
     }
 }

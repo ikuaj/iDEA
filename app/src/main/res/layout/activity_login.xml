@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.LoginActivity"
-
-    >
+    tools:context=".ui.LoginActivity">
 
     <TextView
         android:id="@+id/logintext"
@@ -17,8 +15,7 @@
         android:layout_marginTop="100sp"
         android:text="LOGIN"
         android:textSize="30sp"
-        android:textColor="#000"
-        />
+        android:textColor="#000" />
 
 
     <EditText
@@ -29,10 +26,7 @@
         android:padding="10sp"
         android:ems="12"
         android:background="@drawable/edittextstyle"
-        android:hint="Email"
-
-
-        />
+        android:hint="Email" />
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -40,9 +34,7 @@
         android:layout_marginTop="20sp"
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="#000"
-        app:hintEnabled="false"
-
-        >
+        app:hintEnabled="false">
 
         <EditText
             android:layout_width="wrap_content"
@@ -52,10 +44,7 @@
             android:padding="10sp"
             android:ems="12"
             android:inputType="textPassword"
-            android:text="Password"
-
-
-            />
+            android:text="Password" />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -68,9 +57,18 @@
         android:layout_marginTop="20sp"
         android:background="@drawable/buttonstyle"
         android:text="LOGIN"
-        android:textColor="#fff"
+        android:textColor="#fff" />
 
-        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="Don't have an account? Sign up here!"
+        android:id="@+id/registerTextView"
+        android:layout_gravity="center_horizontal" />
 
 
 
