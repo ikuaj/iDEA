@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#000000"
+    android:background="#ffffff"
     tools:context=".ui.SplashActivity">
 
     <ImageView
         android:layout_gravity="center"
-        android:src="@drawable/java"
+        android:src="@drawable/splash"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
